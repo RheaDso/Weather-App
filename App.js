@@ -22,8 +22,6 @@ let weather={
         document.querySelector(".icon").src ="https://openweathermap.org/img/wn/" + icon + ".png";
         document.querySelector(".description").innerText = description;
         document.querySelector(".humidity").innerText = "Humidity: "+humidity+"%";
-        document.querySelector(".weather").classList.toggle.remove("loading");
-        document.body.style.backgroundImage="url('https://source.unsplash.com/1600x900/?"+name+"')";
     },
     search: function(){
         this.fetchWeather(document.querySelector(".search-bar").value);
